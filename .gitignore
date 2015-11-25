@@ -1,2 +1,2 @@
-#remove class files
-*.class
+#remove target folder
+target/**
