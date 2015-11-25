@@ -8,6 +8,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
+import com.perfmon.util.PerfmonConstants;
+
 /**
  * @author Kartikeya
  *
@@ -15,5 +17,5 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Perfmon {
-	
+	String methodMarkerName() default PerfmonConstants.defaultString;
 }

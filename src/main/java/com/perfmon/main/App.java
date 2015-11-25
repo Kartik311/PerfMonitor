@@ -18,7 +18,8 @@ public class App
         System.out.println( StringUtils.capitalize("heelo"));
         ApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:com/perfmon/config/spring-config.xml");
         Employee emp = (Employee)ctx.getBean("employee");
-        
+        emp.setId(1);
+        emp.setName("Rahul");
         emp.printdetails();
     }
 }

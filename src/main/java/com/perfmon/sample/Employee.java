@@ -18,9 +18,15 @@ public class Employee {
 		this.name = name;
 	}
 	
-	@Perfmon
+	@Perfmon(methodMarkerName="PrintDetails")
 	public void printdetails(){
 		System.out.println(id + "" + name);
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 }
