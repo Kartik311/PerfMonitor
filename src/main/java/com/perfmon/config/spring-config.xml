@@ -15,6 +15,6 @@
 
 <bean id="perfmonAspect" class="com.perfmon.aspect.PerfmonAspect" />
 
-<bean id="employee" class="com.perfmon.sample.Employee"/>
+<bean id="employee" class="com.perfmon.test.model.Employee"/>
  
 </beans>

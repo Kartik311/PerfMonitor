@@ -17,5 +17,6 @@ import com.perfmon.util.PerfmonConstants;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Perfmon {
-	String methodMarkerName() default PerfmonConstants.defaultString;
+	String markerName() default PerfmonConstants.defaultString;
+	String metaData() default PerfmonConstants.defaultMetaData;
 }
